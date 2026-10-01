@@ -1,0 +1,63 @@
+/* LETTERTYPES */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto+Condensed:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+/* KLEUREN EN LETTERTYPEFAMILIES */
+:root {
+  --shoe-orange: #fa5708;
+  --shoe-orange-dark: #d94600;
+  --shoe-ink: #30312e;
+  --shoe-muted: #777777;
+  --shoe-background: #ffffff;
+  --shoe-surface: #f6f6f6;
+  --shoe-border: #e0e0e0;
+
+  --shoe-font-body: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+  --shoe-font-heading: "Oswald", "Arial Narrow", sans-serif;
+}
+
+/* BASIS: alleen lettertypes en kleuren. */
+body {
+  font-family: var(--shoe-font-body);
+  color: var(--shoe-ink);
+  background-color: var(--shoe-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--shoe-font-heading);
+}
+
+/* Schrijf je aanvullende CSS hieronder. */
+
+/* Navbar */
+
+.border-orange {
+  --bs-border-color: var(--shoe-orange) !important;
+}
+
+.navbar {
+  --bs-navbar-color: var(--shoe-ink);
+  --bs-navbar-hover-color: var(--shoe-orange);
+  --bs-navbar-active-color: var(--shoe-orange);
+  font-weight: 500;
+}
+
+/* SECTION */
+
+.row {
+  outline: 1px dashed;
+}
+
+/* ACCODRION */
+
+.accordion {
+  --bs-accordion-btn-color: var(--shoe-ink);
+  --bs-accordion-active-color: var(--shoe-orange);
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-icon-width: none;
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}

@@ -1,18 +1,201 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nike Air Force 1 — Bootstrap exercise</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nike Air Force 1 — Bootstrap exercise</title>
 
-  <!-- Bootstrap eerst; eigen CSS daarna. -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
+    <!-- Bootstrap eerst; eigen CSS daarna. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/nike-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Schrijf hier zelf de HTML van de pagina. -->
+    <a class="visually-hidden-focusable p-3" href="#product">Skip to product</a>
 
-  <!-- Schrijf hier zelf de HTML van de pagina. -->
+    <!-- NAVBAR -->
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg py-0" aria-label="Main navigation">
+        <div class="container-fluid px-0">
+          <a
+            class="navbar-brand border-end border-5 border-orange px-3 py-3 me-0"
+            href="#"
+            ><img
+              src="img/nike-logo.png"
+              class="d-inline-block align-text-top"
+              width="64"
+              height="32"
+              alt=""
+          /></a>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse px-3 py-3 py-lg-0"
+            id="main-menu"
+          >
+            <ul
+              class="navbar-nav mx-auto mb-3 mb-lg-0 gap-lg-3 text-uppercase"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#product"
+                  >Men</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Boys</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Girls</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customize</a>
+              </li>
+            </ul>
+            <div class="rounded-pill">
+              <form
+                class="d-flex border border-1 border-secondary rounded-pill align-items-center px-2 me-3"
+                role="search"
+              >
+                <i
+                  class="bi bi-search fw-bold"
+                  style="font-weight: 900 !important"
+                ></i>
+                <input
+                  class="form-control me-2 border-0"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container py-4">
+      <section class="row g-4 gx-xl-5">
+        <div class="col-lg-3">
+          <h1 class="fs-3 text-uppercase mb-2">
+            nike air force 1
+          </h1>
+          <p class="small text-uppercase fst-italic mb-2">men's shoe</p>
+          <p class="small mb-4">Style: 488298-160</p>
+          <h2 class="fs-5 text-uppercase mb-2">
+            legendary style, redefined
+          </h2>
+          <p class="small mb-3">The legend lives on in the Nike Air Force 1 Men’s Shoe, a low-cut take on the iconic
+             AF-1 blending classic court style and striking color contrast.</p>
+
+            <!-- ACCORDION -->
+
+            <div class="accordion accordion-flush" id="product-details">
+              <!-- item1 -->
+              <div class="accordion-item border-0">
+                <h3 class="accordion-header" id="heading-durable">
+                  <button class="accordion-button text-uppercase px-0  py-1 shadow-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#durable"
+                  aria-expanded="true"
+                  aria-controls="durable">Durable</button>
+                </h3>
+                <div id="durable" class="accordion-collapse collapse show"
+                aria-labelledby="heading-durable" data-bs-parent="#product-details">
+                  <div class="accordion-body px-0 pt-1 pb-3 small">
+                    The leather upper includes strategically placed overlays for added premium
+                    durability, fit and support.Perforations enhance ventilation to help keep feet dry and comfortable.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item2 -->
+               <div class="accordion-item border-0">
+                <h3 class="accordion-header" id="heading-detailed">
+                  <button class="accordion-button text-uppercase px-0  py-1 shadow-none collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#detailed"
+                  aria-expanded="false"
+                  aria-controls="detailed">Detailed</button>
+                </h3>
+                <div id="detailed" class="accordion-collapse collapse"
+                aria-labelledby="heading-durable" data-bs-parent="#product-details">
+                  <div class="accordion-body px-0 pt-1 pb-3 small">
+                   Clean stitching and a low-cut profile give this classic sneaker its distinctive finish.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item3 -->
+               <div class="accordion-item border-0">
+                <h3 class="accordion-header" id="heading-comfortable">
+                  <button class="accordion-button text-uppercase px-0  py-1 shadow-none collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#comfortable"
+                  aria-expanded="false"
+                  aria-controls="comfortable">comfortable</button>
+                </h3>
+                <div id="comfortable" class="accordion-collapse collapse"
+                aria-labelledby="heading-comfortable" data-bs-parent="#product-details">
+                  <div class="accordion-body px-0 pt-1 pb-3 small">
+                   A padded collar and cushioned midsole provide comfort throughout the day.
+                  </div>
+                </div>
+              </div>
+
+              <!-- item4 -->
+              <div class="accordion-item border-0">
+                <h3 class="accordion-header" id="heading-origins">
+                  <button class="accordion-button text-uppercase px-0  py-1 shadow-none collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#origins"
+                  aria-expanded="false"
+                  aria-controls="origins">origins</button>
+                </h3>
+                <div id="origins" class="accordion-collapse collapse"
+                aria-labelledby="heading-origins" data-bs-parent="#product-details">
+                  <div class="accordion-body px-0 pt-1 pb-3 small">
+                  Originally introduced in 1982, the Air Force 1 brings basketball heritage to everyday style.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <div class="col-lg-9"></div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
