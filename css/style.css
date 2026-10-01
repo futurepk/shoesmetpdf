@@ -59,5 +59,34 @@ h6 {
   --bs-accordion-active-color: var(--shoe-orange);
   --bs-accordion-active-bg: white;
   --bs-accordion-btn-icon-width: none;
-  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+
+.hover-orange:hover,
+.hover-orange:focus-visible,
+.hover-orange.active,
+.accordion-button:hover {
+  color: var(--shoe-orange) !important;
+}
+
+a.text-orange:hover {
+  color: var(--shoe-orange) !important;
+}
+
+/* carousel */
+.carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+}
+
+.btn.bg-surface {
+  background-color: var(--shoe-surface);
+}
+
+.color-choice {
+  --bs-btn-border-color: var(--shoe-surface);
+  --bs-btn-hover-border-color: var(--shoe-orange);
+}
+
+.carousel .carousel-indicators [data-bs-target]:hover {
+  background-color: var(--shoe-orange);
 }
